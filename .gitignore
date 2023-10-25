@@ -16,7 +16,7 @@
 /build
 
 #secret_file
-src/utils/*.js
+src/utils/
 
 # misc
 .DS_Store
