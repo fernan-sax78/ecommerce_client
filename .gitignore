@@ -15,8 +15,6 @@
 # production
 /build
 
-#secret_file
-src/utils/
 
 # misc
 .DS_Store
