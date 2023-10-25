@@ -15,6 +15,9 @@
 # production
 /build
 
+#secret_file
+src/utils/*.js
+
 # misc
 .DS_Store
 *.pem
@@ -35,4 +38,4 @@ yarn-error.log*
 next-env.d.ts
 
 
-src/utils/*.js
+
