@@ -1,0 +1,49 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.address{
+    background-color: $background-quaternary;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: .625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width : 41.5625rem) {
+    align-items: flex-end;
+    gap: 9px;
+    flex-direction: column;
+    }
+
+    > div{
+        display: flex;
+
+        @media (max-width : 41.5625rem){
+            display: block;
+        }
+    }
+}
+
+
+.title{
+    margin-right: .3125rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.addressInfo{
+    color : $text-secondary;
+    font-size: 1.125rem;
+}
+
+.actions{
+    
+    > button {
+        padding: .75rem !important;
+        margin-left: .625rem !important;
+    }
+
+
+}

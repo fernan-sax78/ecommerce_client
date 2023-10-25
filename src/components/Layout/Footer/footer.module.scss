@@ -1,0 +1,66 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.footer{
+    background-color: $background-tertiary;
+    padding: 1.875rem 0rem;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width : 48rem) {
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    > div{
+        width: 100%;
+        text-align: center;
+
+
+        > a > img{
+            width: 9.375rem;
+
+       @media (max-width : 48rem) {
+        width: 12.375rem;
+        margin: 0 auto;
+    }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: .3125rem;
+            margin: 0 ;
+            padding: 0 ;
+        }
+
+        &.social{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+        @media (max-width : 48rem) {
+            justify-content: center;
+            align-items: center;
+        }            
+
+            > a {
+                margin-left: .625rem;
+            }
+        }
+    }
+}
+
+.copyright{
+    margin-top: 1.875rem;
+    padding-top: 1.875rem;
+    border-top: .0625rem solid $border-primary;
+    text-align: center;
+    > span {
+        color : $text-secondary
+    }
+}

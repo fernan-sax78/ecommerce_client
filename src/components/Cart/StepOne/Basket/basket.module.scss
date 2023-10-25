@@ -1,0 +1,83 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.basket{
+    > h2{
+        margin-bottom: .9375rem;
+        font-size: 1.125rem;
+    }
+}
+
+
+.block{
+    background-color: $background-quaternary;
+    width: 100%;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    display: flex;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: .0625rem solid $border-secondary;
+
+    &:last-of-type{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    > img {
+        width: 9.375rem;
+        border-radius: .5rem;
+        margin-right: 1.25rem;
+    }
+
+    > div {
+        width: 80%;
+        display: flex;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: .625rem 0;
+            width: 100%;
+
+            p{
+                &:first-of-type{
+                    font-weight: bold;
+                }
+                &:last-of-type{
+                    color: $text-secondary;
+                    font-size: .75rem;
+                }
+            }
+
+            i:hover{
+                color: $primary;
+            }
+        }
+
+        .quantity{
+            display: flex;
+            align-items: center;
+            width: 10.6875rem;
+            @media (max-width : 41.6875rem) {
+                flex-direction: column-reverse;
+            }
+
+            > div {
+                min-width: 4.5rem !important;
+            }
+
+            span{
+                margin-left: .625rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

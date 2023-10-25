@@ -1,0 +1,8 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.responsive{
+    @media (max-width : 48rem) {
+        height: 10rem;
+    }
+}

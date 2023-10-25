@@ -1,0 +1,163 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.headerCart{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 1.25rem;
+    background-color: $background-tertiary;
+
+    @media (max-width : 41.6875rem) {
+        gap: 1.625rem;
+        display: grid;
+        padding: .8rem;
+    }
+}
+
+.left{
+    width: 20%;
+
+
+    @media (max-width : 41.6875rem) {
+       width: 100%;
+    }
+
+    img{
+        height: 1.875rem;
+    }
+
+}
+
+.center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+
+    @media (max-width : 41.6875rem) {
+        width: 100%;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+
+        &.active{
+            > span {
+                color : $text-primary
+            }
+            .number{
+                border-color: $primary;
+            }
+        }
+
+        &.success .number{
+          border-color: $primary;
+          background-color: $primary;
+          color: $primary;
+          
+
+          i{
+            display: flex;
+            position: absolute;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+          }
+
+        } 
+
+        &.success .space{
+             background-color: $primary;
+        }
+
+        > span{
+            color : $text-primary;
+            @media( max-width : 41.6875rem) {
+                font-size: .625rem;
+            }
+        }
+        .number{
+            border : .1875rem solid $border-primary;
+            font-size: .75rem;
+            border-radius: 6.25rem;
+            height: 1.625rem;
+            width: 1.625rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: .0625rem;
+            padding-top: .0625rem;
+            margin-right: .625rem;
+            i{
+                display: none;
+
+            }
+        }
+
+        .space{
+            width: 6.25rem;
+            height: .1875rem;
+            background-color: $border-primary;
+            margin-left: .9375rem;
+            margin-right: 1.25rem;
+
+
+    @media (max-width : 41.6875rem) {
+          width: 3.25rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+    }
+
+        }
+
+        &:last-of-type .space{
+            display: none;
+        }
+    }
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media (max-width: 41.6875rem) {
+        width: 100%;
+        position: absolute;
+        top: .3125rem;
+        right: 1.25rem;
+    }
+
+    > i {
+        color : $success;
+        font-size: 1.25rem;
+        margin-right: .625rem;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        border-left: .0625rem solid $border-primary;
+        padding-left: .625rem;
+
+        > span {
+            &:first-of-type{
+                font-weight: bold;
+                font-size: .8125rem;
+
+            }
+
+            &:last-of-type{
+                color: $text-secondary;
+                font-size: .6875rem;
+                margin-top: -0.25rem ;
+            }
+        }
+    }
+}

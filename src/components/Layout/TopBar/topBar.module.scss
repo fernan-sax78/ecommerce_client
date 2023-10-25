@@ -1,0 +1,58 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.topBar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem;
+    z-index: 5;
+    background-color: rgba(0,0,0,.5);
+
+@media (max-width : 48rem) {
+        position: static; 
+        .menuResponsive , .closeResponsive{
+        display: flex !important;
+        font-size: 2rem;
+        color: $primary;
+        width: 3.125rem;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        z-index: 8;
+       }
+    }
+}
+
+.menuResponsive , .closeResponsive{
+    display: none !important;
+}
+
+
+
+.left{
+    width: 20%;
+
+    img{
+        height: 1.875rem;
+        @media (max-width : 57.5rem) {
+        max-width: none !important;
+    }
+    }
+}
+
+.center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+

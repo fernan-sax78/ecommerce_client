@@ -1,0 +1,50 @@
+@use "~/src/scss/colors.scss" as * ;
+
+.gridGames{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.625rem;
+    margin-top: 1.25rem;
+
+    @media (max-width : 48rem) {
+        display: block ;
+        margin: 0;
+        margin-top: 0;
+    }
+}
+
+.game{
+    width: 33.33%;
+    margin-bottom: .625rem;
+
+
+    &:hover{
+        opacity: .6;
+    }
+
+    > div{
+        position: relative;
+        padding: .625rem .625rem 0 .625rem;
+    
+    &:last-of-type{
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        >img{
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        .discount{
+            position: absolute;
+            left: 1.2rem;
+            bottom: 1rem;
+        }
+
+        .price{
+            font-size: 1.25rem;
+        }
+    }
+}

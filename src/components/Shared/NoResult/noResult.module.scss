@@ -1,0 +1,16 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.noResult{
+    text-align: center;
+    margin-top: 3.125rem;
+    height: 31.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        color: $text-secondary;
+        font-size: 1.25rem !important;
+    }
+}

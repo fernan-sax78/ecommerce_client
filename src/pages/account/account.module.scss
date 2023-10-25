@@ -1,0 +1,37 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.tabs{
+    position: relative;
+    margin-top: 3.125rem;
+
+    > div {
+        > a{
+            &:last-of-type{
+                position : absolute !important;
+                right: 0;
+            }
+
+            &:nth-last-of-type(2){
+                position : absolute !important;
+                right: 6.25rem;
+            }
+
+            > i{
+                margin-right: .6rem !important;
+            }
+        }
+    }
+}
+
+
+.containerForms{
+    display: flex;
+    margin: 0 /* -0.625rem; */;
+    margin-top: 3.125rem;
+
+    @media (max-width : 41.6875rem) {
+        flex-direction: column;
+    }
+}

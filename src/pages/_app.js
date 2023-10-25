@@ -1,5 +1,19 @@
-import '@/styles/globals.css'
+import { AuthProvider, CartProvider } from '@/contexts';
+import 'semantic-ui-css/semantic.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "@/scss/index.scss";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+export default function App(props) {
+
+  const { Component, pageProps } = props;
+
+  return (
+    <AuthProvider>
+      <CartProvider>
+        <Component {...pageProps} />
+      </CartProvider>
+    </AuthProvider>
+  )
 }

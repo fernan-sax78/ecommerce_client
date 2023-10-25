@@ -1,0 +1,135 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.platform{
+    position: relative;
+    background-color: $background-quaternary_blur;
+    backdrop-filter: blur(1.25rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 3.125rem 0 1.25rem;
+    border-radius: 6.25rem 0 0 6.25rem;
+    box-shadow: 6px 3px 8px #000;
+
+
+    &.activeResponsive{
+        display: flex;
+        transform: translateX(0%);
+        transition: transform .5s ease;
+}
+
+    @media (max-width : 48rem) {
+        transform: translateX(-100%);
+        transition: transform .5s ease;
+        height: 100dvh;
+        width: 60%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        border-radius: 0 !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+        position: fixed;
+        padding: 0 1.25rem 0 1.25rem;
+        box-shadow: none;
+        }
+
+
+
+    > a {
+        display: flex;
+        align-items: center;
+        padding: 1.25rem .9375rem;
+        text-decoration: none;
+
+        img{
+            filter: brightness(0) invert(1);
+            height: 1rem;
+            padding-right: .625rem;
+        }
+    }
+}
+
+.search{
+    position: absolute;
+    top: 0;
+    right: -1.875rem;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6.25rem;
+    height: 100%;
+    width: 3.75rem;
+    border: 0;
+    z-index: 3;
+
+    @media (max-width : 48rem) {
+       position: relative;
+       height: auto;
+       padding: .625rem;
+       width: 3.25rem;
+       display: flow-root;
+       right: 0;
+    }
+    &:hover{
+        background-color: $primary-hover-two;
+        cursor: pointer;
+    }
+
+    > i {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+}
+
+.inputContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height : 100%;
+    background-color: $primary;
+    border-radius: 6.25rem;
+    width: 0;
+   
+    @media (max-width : 41.6875rem) {
+        position: relative;
+        height : auto;
+        margin: 1.25rem 0 1.25rem 0;
+    }
+    
+
+    &.active{
+        display: flex;
+        width: calc(100% + 1.875rem);
+    }
+
+    .input{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 6.25rem;
+
+        > input {
+            background-color: $primary !important;
+            border: 0 !important;
+            color: $text-primary !important;
+            font-size: 1.125rem;
+            padding: .625rem 1.875rem;
+
+            &::placeholder{
+                color: $text-primary !important;
+            }
+        }
+    }
+}
+
+/* .displayOn{
+    display: flex;
+} */
+
+
+

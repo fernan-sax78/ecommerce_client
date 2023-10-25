@@ -1,0 +1,32 @@
+@use "../colors.scss" as color;
+
+
+.ui.modal.visible.active {
+  background-color: color.$background-primary;
+  border-radius: .75rem;
+  overflow: hidden;
+
+        @media (max-width : 57.5rem) { 
+            padding: .625rem;
+        }  
+
+  > .header {
+    background-color: color.$background-primary;
+    color: color.$text-primary;
+    font-size: 1.25rem;
+    padding: 1.875rem 1.875rem 0 1.875rem;
+  }
+
+  > .content {
+    background-color: color.$background-primary;
+    padding: 1.875rem;
+
+        @media (max-width : 57.5rem) { 
+            padding: 0 !important; 
+    }
+  }
+}
+
+.ui.modal.confirm.visible.active > .actions {
+  padding: .8rem !important;
+}

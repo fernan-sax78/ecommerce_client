@@ -1,0 +1,163 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.order{
+    background-color: $background-quaternary;
+    width: 100%;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    display: flex;
+    margin-bottom: 1.25rem;
+    justify-content: space-between ;
+    align-items: center;
+    border: .125rem solid transparent;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $primary;
+    }
+
+    > div > span {
+        font-size: .75rem;
+        color : $text-secondary;
+    }
+    > p{
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+}
+
+.product{
+    display: flex;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: .0625rem solid $border-secondary;
+
+    &:last-of-type{
+    margin-bottom: 0 ;
+    padding-bottom: 0 ;
+    border-bottom: 0 ;
+    }
+
+    > img {
+        width: 6.25rem;
+        border-radius: .5rem;
+        margin-right: 1.25rem;
+
+        @media (max-width : 41.6875rem) {
+               height: fit-content;
+            }
+    }
+
+    > div {
+        display: flex;
+        width: 100%;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            padding: .625rem 0;
+            width: 100%;
+
+            @media (max-width : 41.6875rem) {
+                width: 80%;
+            }
+
+            p {
+                &:first-of-type{
+                    font-weight: bold;
+                }
+
+                &:last-of-type{
+                    color: $text-secondary;
+                    font-size: .75rem;
+                }
+            }
+
+            > div {
+                text-align: left !important;
+            }
+        }
+
+        .quantity{
+            display: flex;
+            align-items: center;
+            width: 9.375rem;
+            @media (max-width : 41.6875rem) {
+                width: 13.375rem;
+            }
+            span {
+                margin-left: .625rem;
+                font-weight: bold;
+
+                &:last-of-type{
+                    font-size: 1.2rem;
+                    color: $success;
+                }
+            }
+        }
+    }
+}
+
+.address{
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: .0625rem solid $border-secondary;
+    background-color: $background-quaternary;
+    padding: 1.25rem;
+    border-radius: .625rem;
+
+    .title{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .addressInfo{
+      color: $text-secondary;
+      font-size: 1rem ; 
+    }
+
+    > div {
+        text-align: left !important;
+    }
+}
+
+.total p{
+    text-align: right;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $primary;
+
+}
+
+.total > div {
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: end;
+    align-items: center;
+    gap: .3125rem;
+}
+
+
+.close{
+    position: absolute !important;
+    top: .625rem !important;
+    right: .25rem !important;
+    font-size: 1.2rem !important;
+    color: $danger !important;
+    border-radius: 100%;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    background-color: $background-quaternary;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+
+    &:hover{
+        cursor: pointer;
+        color: $primary-hover !important;
+    }
+}

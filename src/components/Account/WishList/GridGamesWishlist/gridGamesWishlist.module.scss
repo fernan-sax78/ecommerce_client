@@ -1,0 +1,79 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.gridGame{
+   display: flex;
+   flex-wrap: wrap;
+   margin: -0.625rem;
+   margin-top: 1.25rem;
+
+   @media (max-width : 25.875rem) {
+     display: block;
+   }
+
+    @media (max-width : 57.5rem) {
+     margin: 0;
+   }
+
+}
+
+
+.game{
+    position: relative;
+    width: 33.33%;
+    margin-bottom: .625rem;
+
+  @media (max-width : 25.875rem) {
+     width: 100%;
+   }
+   
+
+    > a > div {
+        position: relative;
+        padding: .625rem .625rem 0 .625rem;
+        
+        &:first-of-type{
+
+        &:hover{
+            opacity: .6;
+        }
+        }
+
+        &:last-of-type{
+            padding-top: 0rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        > img{
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        .discount{
+           position: absolute;
+           left: 1.2rem;
+           bottom: 1rem;
+        }
+
+        .price{
+            font-size: 1.125rem;
+
+        }
+
+    }
+
+    
+    .wishlistIcon{
+          font-size: 1.13rem  !important;
+          z-index: 5;
+          position: absolute;
+          top: 1.25rem;
+          right: .9375rem;
+          z-index: 1;
+       }
+        
+}
+
+

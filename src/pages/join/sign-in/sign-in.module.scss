@@ -1,0 +1,22 @@
+
+.signIn {
+    width: 50%;
+
+@media (max-width : 57.5rem) {
+     width: 100%;
+     margin-left: .625rem;
+     margin-right: .625rem;
+}
+
+
+    >h3{
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    .actions{
+       margin-top: .625rem;
+       text-align: center;
+     
+    }
+}

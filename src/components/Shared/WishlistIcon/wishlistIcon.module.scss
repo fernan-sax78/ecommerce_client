@@ -1,0 +1,36 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.wishlistIcon{
+    color: $primary;
+
+    &:hover{
+        opacity: .6;
+        cursor: pointer;
+    }
+}
+
+.needSignUp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-secondary;
+
+    a{
+        margin: 0 .3125rem 0 .3125rem ;
+    }
+}
+
+.close{
+    position: absolute !important;
+    top: .625rem !important;
+    right: 1.25rem !important;
+    font-size: 1.2rem !important;
+    color: $danger !important;
+
+    &:hover{
+        cursor: pointer;
+        color: $primary-hover !important;
+    }
+}

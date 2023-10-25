@@ -1,0 +1,59 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.resume{
+   > h2{
+     margin-bottom: .9375rem;
+     font-size: 1.125rem;
+   }
+
+   a{
+    margin-top: 1.25rem;
+    color: $text-secondary;
+    font-size: 1rem;
+    &:hover{
+        color: $primary;
+        transition: color .2s ease-in;
+    }
+   }
+}
+
+.block{
+    background-color: $background-quaternary;
+    width: 100%;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.25rem;
+
+
+    > div {
+       display: flex;
+       justify-content: space-between;
+
+
+       > span { 
+        font-size: .8125rem;
+        color : $text-secondary;
+       }
+
+       &:last-of-type{
+          > span {
+        margin-top: .625rem;
+        color: $text-primary;
+            &:last-of-type{
+                font-size: 1rem;
+            }
+          }
+       }
+    }
+}

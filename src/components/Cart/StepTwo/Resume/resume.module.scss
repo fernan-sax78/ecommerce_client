@@ -1,0 +1,83 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.resume > h2 {
+    margin-bottom: .9375rem;
+    font-size: 1.125rem;
+
+    @media (max-width : 41.6875rem) {
+        margin-top: 1.25rem;
+    }
+}
+
+.block , .blockTotal{
+    background-color: $background-quaternary;
+    width: 100%;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5625rem;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: .0625rem solid $border-secondary;
+        padding: .625rem 0;
+
+        &:last-of-type{
+            border: 0;
+            padding-bottom: 0;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-weight: bold;
+                margin-bottom: -0.3125rem;
+                padding-right: 3.125rem;
+            }
+
+            span{
+                font-size: .625rem;
+                color: $text-secondary;
+            }
+        }
+
+        > span {
+            color: $text-secondary;
+            font-size: .75rem;
+            white-space: nowrap;
+        }
+    }
+}
+
+.blockTotal{
+    > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.875rem;
+
+        >span {
+            font-weight: bold;
+
+
+            &:last-of-type{
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

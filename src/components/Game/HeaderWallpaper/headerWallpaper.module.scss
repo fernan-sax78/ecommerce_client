@@ -1,0 +1,26 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.headerWallpaper{
+    display: flex;
+    position: relative;
+    height: 31.25rem;
+    position: relative;
+
+
+    &::after{
+        content: "";
+        background-color: $background-primary;
+        position: absolute;
+        bottom: -1px;
+        height: 3.75rem;
+        width: 100%;
+        clip-path: polygon(0 100% , 100% 100%, 0 0);
+    }
+
+   > img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+

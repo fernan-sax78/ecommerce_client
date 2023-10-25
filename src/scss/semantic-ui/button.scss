@@ -1,0 +1,28 @@
+@use "../colors.scss" as color;
+
+
+.ui.button.primary{
+    background-color: color.$primary;
+    color: color.$text-primary;
+    margin: 0;
+    padding: .9688rem 1.875rem;
+    border-radius: .375rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: color.$primary-hover;
+    }
+}
+
+
+
+.ui.form .ui.button[type=submit]{
+    transition: transform .3s;
+    &:hover{
+        transform: translateY(.0875rem);
+    }
+    &:active{
+         background-color: color.$primary-hover-two;
+    }
+}

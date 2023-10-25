@@ -1,0 +1,29 @@
+@use "../colors.scss" as color;
+
+
+.ui.modal.confirm.visible.active {
+  background-color: color.$background-primary;
+  border-radius: .75rem;
+  overflow: hidden;
+
+  > .content {
+    background-color: color.$background-primary;
+    color: color.$text-primary;
+    font-size: 1.125rem;
+    padding: 1.25rem 1.25rem 0 1.25rem !important;
+  }
+
+  > .actions {
+    background-color: color.$background-primary;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .ui.button {
+      width: 48%;
+      padding: .9375rem !important;
+      margin: 0;
+    }
+  }
+}

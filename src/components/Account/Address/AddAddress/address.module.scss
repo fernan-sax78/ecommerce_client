@@ -1,0 +1,12 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.addBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (max-width : 41.6875rem) {
+        margin: 0 1.25rem 0 0 !important;
+    }
+}

@@ -1,0 +1,10 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.relative{
+    padding-top: 6.25rem;
+
+    @media (max-width : 41.6875rem) {
+        padding-top: 0 !important;
+    }
+}

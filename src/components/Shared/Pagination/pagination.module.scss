@@ -1,0 +1,8 @@
+@use "~/src/scss/colors.scss" as *;
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+}

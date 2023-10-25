@@ -1,0 +1,53 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.info{
+    display: flex !important;
+
+        @media (max-width : 48rem) {
+           display: block !important;
+    }
+
+}
+
+.summary{
+    width: 50%;
+    padding: 1.25rem 1.25rem 1.25rem 0;
+
+    @media (max-width : 48rem) {
+        width: 100% !important;
+        padding: 1.25rem ;
+        margin-top: 9.375rem;
+    }
+
+    p{
+        color : $text-secondary;
+        line-height: 1.5625rem;
+    }
+}
+
+.more{
+    width: 50%;
+    padding: 1.25rem 1.25rem 1.25rem 0;  
+
+        @media (max-width : 48rem) {
+         width: 100% !important;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        
+
+        li{
+            padding-bottom: .3125rem;
+
+            span{
+                color: $text-secondary;
+                padding-right: .625rem;
+            }
+        }
+    }
+}

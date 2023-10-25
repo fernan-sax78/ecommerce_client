@@ -1,0 +1,33 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.addresses{
+    > h2{
+        margin-bottom: .9375rem;
+        font-size: 1.125rem;
+
+    }
+}
+
+.address{
+    border: .125rem solid $border-primary;
+    width: 100%;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .625rem;
+
+    &:hover{
+        cursor: pointer;
+        border-color: $primary;
+    }
+
+    &.active{
+        border-color: $primary;
+    }
+
+    > p:last-of-type{
+        color: $text-secondary;
+    }
+}

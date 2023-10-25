@@ -1,0 +1,53 @@
+@use "../colors.scss" as color;
+
+.ui.form {
+  label {
+    position: relative;
+   /*  bottom: .5rem; */
+        @media (max-width : 41.6875rem) {
+        bottom: 0 !important;
+        padding: .3125rem;
+    }
+  }
+
+  .field {
+    .ui.input {
+      input {
+        border: .125rem solid color.$border-primary;
+        background-color: color.$background-secondary;
+        color: color.$text-primary;
+        padding: .875rem;
+        border-radius: .375rem;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-color: color.$primary;
+        }
+      }
+    }
+  }
+
+  .field.error {
+    .ui.input {
+      input {
+        border-color: color.$danger;
+      }
+    }
+  }
+
+  .ui.button[type="submit"] {
+    background-color: color.$primary;
+    color: color.$text-primary;
+    margin: 0;
+    padding: .9688rem 1.875rem;
+    border-radius: .375rem;
+  }
+
+  @media (max-width : 41.6875rem) {
+    padding: .3125rem !important;
+    width: 100%;
+  }
+
+  
+}

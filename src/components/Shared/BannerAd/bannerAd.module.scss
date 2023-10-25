@@ -1,0 +1,49 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+.container{
+    display: flex;
+    position: relative;
+    height: 31.25rem;
+    background-color: #489bca;
+    background-image: radial-gradient(circle at center bottom, #489bca 0 , #154483 29%, #0f0f1b 73% );
+
+
+    &::after{
+        content : "";
+        background-color: $background-primary;
+        position: absolute;
+        bottom: -0.0625rem;
+        height: 3.75rem;
+        width: 100%;
+        clip-path: polygon(0 100%, 100% 100% , 0 0);
+    }
+}
+
+.containerImage{
+    display: flex !important;
+    justify-content: flex-end;
+    padding-top: 1.875rem;
+}
+
+.infoContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width : 57.5rem) {
+        height: auto;
+        padding: .3125rem;
+        background-color: rgba(0,0,0,.6);
+    }
+
+    h3{
+        font-weight: normal;
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+    }
+}

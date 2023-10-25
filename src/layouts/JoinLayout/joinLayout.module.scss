@@ -1,0 +1,84 @@
+@use "~/src/scss/colors.scss" as *;
+
+.container{
+    height: 100dvh;
+    max-height: 100dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width : 48rem){
+        flex-direction: column;
+        margin-top: 6.25rem;
+    }
+    @media (max-width : 47rem)and (max-height : 41.6875rem){
+        margin-top: 0 !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.topBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .9375rem;
+
+    > a {
+        > img {
+            height: 1.875rem;
+        }
+
+        > i {
+            font-size: 1.625rem;
+            color: $danger;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.blockLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        @media (max-width : 48rem) {
+       
+        width: 100%;
+        margin-top: 4.15rem;
+       
+    }
+}
+
+.blockRight{
+    background-image: url("/images/spider-man.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+
+    @media (max-width : 48rem) and (min-width : 23.4375rem){
+       
+        width: 95%;
+        margin: 0 auto;
+       
+    }
+        @media (max-width : 47rem)and (max-height : 41.6875rem){
+       
+        display: none;
+
+       
+    }
+    
+
+}
+
+

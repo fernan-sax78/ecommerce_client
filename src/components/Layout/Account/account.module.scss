@@ -1,0 +1,100 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.account{
+    display: flex;
+
+
+    button{
+        background-color: transparent !important;
+        margin-left: .625rem !important;
+
+        &:hover{
+            > i {
+                color: $primary;
+            }
+        }
+
+        > i {
+            font-size: 1.125rem;
+            height: 1.25rem !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+        .cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > div {
+                background-color: $primary-hover;
+                color: $text-primary;
+                font-size: .75rem;
+                margin-left: .3125rem;
+            }
+        }
+
+        .user{
+            background-color: $background-tertiary !important;
+            border-radius: .9375rem;
+            border: .125rem solid $background-tertiary;
+
+
+            .checkIcon{
+                position: absolute;
+                top: 1.25rem;
+                right: 1.45rem;
+                color: $success;
+            }
+
+            &:hover{
+                border: .125rem solid $primary;
+
+                i {
+                    color : $text-primary;
+                }
+            }
+        }
+
+
+                .signInIcon{
+                position: absolute;
+                top: 1.25rem;
+                right: 1.45rem;
+                color: $primary;
+            }
+}
+
+.emptyCartMess{
+    border-top: .0625rem solid $border-primary;
+    padding-top: 1.25rem;
+    color: $text-secondary;
+    font-size: 1.2rem;
+}
+
+
+.needSelectOne{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-secondary;
+}
+
+
+.close{
+    position: absolute !important;
+    top: .625rem !important;
+    right: 1.25rem !important;
+    font-size: 1.2rem !important;
+    color: $danger !important;
+
+    &:hover{
+        cursor: pointer;
+        color: $primary-hover !important;
+    }
+}

@@ -1,0 +1,57 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+
+    @media (max-width : 41.6875rem) {
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    > div {
+       
+        &:nth-child(1),
+        &:nth-child(2){
+        width: 50%;
+        margin: 0 !important;
+            @media (max-width : 41.6875rem) {
+              width: 100%;
+           }
+        }
+        &:nth-child(2){
+            margin-left: .9375rem !important;
+         @media (max-width : 41.6875rem) {
+            margin-left: 0 !important;
+          }            
+        }
+        &:nth-child(3){
+             margin: 0 0 0 1rem !important;
+             @media (max-width : 41.6875rem) {
+                margin: 0 !important;
+             }
+            button {
+                width: max-content !important;
+            }
+        }
+        &:nth-child(4){
+            width: 3.125rem;
+            height: 1.875rem;
+            display: grid;
+            margin-left: 1rem;
+
+            i{
+                align-self: center;
+                justify-self: center;
+                color: $success;
+                @media (max-width : 41.6875rem) {
+                     position: absolute;
+                     top: 140px;
+                     right: 80px;                   
+                }
+            }
+        }
+    }
+}

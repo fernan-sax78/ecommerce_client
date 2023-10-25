@@ -1,0 +1,26 @@
+@use "~/src/scss/colors.scss" as *;
+
+
+
+.labelDiscount{
+    font-weight: 700;
+    background-color: $primary;
+    color: $text-primary;
+    position: absolute;
+    border-radius: .5rem .5rem 0;
+    padding: .1875rem .25rem .0625rem .25rem;
+    z-index: 2;
+    font-size: .8125rem;
+    &::after{
+        content: "";
+        transform: skewX(26deg);
+        width: 100%;
+        border-radius: .625rem .3125rem;
+        position: absolute;
+        background-color: $primary;
+        top: 0;
+        bottom: 0;
+        right: -0.25rem;
+        z-index: -1;
+    }
+}

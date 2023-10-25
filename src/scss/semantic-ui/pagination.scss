@@ -1,0 +1,21 @@
+@use "../colors.scss" as color;
+
+
+.ui.pagination {
+  border-color: color.$border-primary;
+  background-color: color.$background-quaternary;
+
+  > .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color.$text-primary;
+
+    &.active,
+    &:focus,
+    &:hover {
+      background-color: color.$background-tertiary !important;
+      color: color.$text-primary !important;
+    }
+  }
+}
