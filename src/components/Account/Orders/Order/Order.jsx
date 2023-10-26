@@ -78,9 +78,9 @@ export  function Order(props) {
 
     <div className={styles.address}>
       <div>
-        <p className={styles.title}>{address.attributes.title}</p>
+        <p className={styles.title}>{address.attributes.title} :</p>
         <p className={styles.addressInfo}>
-          {address.attributes.name} , {address.attributes.address} , {" "} 
+          {address.attributes.name}  {address.attributes.address} , {" "} 
           {address.attributes.state} , {address.attributes.city} , {" "} 
           {address.attributes.postal_code}
         </p>
