@@ -32,6 +32,9 @@
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
     border-bottom: .0625rem solid $border-secondary;
+@media (max-width : 23.4375rem) {
+    display: block !important;
+}    
 
     &:last-of-type{
     margin-bottom: 0 ;
@@ -59,8 +62,8 @@
             padding: .625rem 0;
             width: 100%;
 
-            @media (max-width : 41.6875rem) {
-                width: 80%;
+            @media (max-width : 48rem) {
+                width: 70%;
             }
 
             p {
@@ -76,16 +79,16 @@
 
             > div {
                 text-align: left !important;
+                @media (max-width : 23.4375rem) {
+                    width: 12.375rem;
+                }
             }
         }
 
         .quantity{
             display: flex;
             align-items: center;
-            width: 9.375rem;
-            @media (max-width : 41.6875rem) {
-                width: 13.375rem;
-            }
+            width: 13.375rem;
             span {
                 margin-left: .625rem;
                 font-weight: bold;
