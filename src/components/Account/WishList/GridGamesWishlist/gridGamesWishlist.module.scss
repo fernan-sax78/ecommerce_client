@@ -4,12 +4,12 @@
 
 .gridGame{
    display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    margin: -0.625rem;
    margin-top: 1.25rem;
 
    @media (max-width : 25.875rem) {
-     display: block;
+     display: block !important;
    }
 
     @media (max-width : 57.5rem) {
