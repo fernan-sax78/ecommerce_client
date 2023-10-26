@@ -11,11 +11,11 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width : 41.5625rem) {
+/*     @media (max-width : 31.25rem) {
     align-items: flex-end;
     gap: 9px;
     flex-direction: column;
-    }
+    } */
 
     > div{
         display: flex;
@@ -39,7 +39,9 @@
 }
 
 .actions{
-    
+    @media (max-width : 41.5625rem) {
+        display: flex !important;
+    }
     > button {
         padding: .75rem !important;
         margin-left: .625rem !important;
