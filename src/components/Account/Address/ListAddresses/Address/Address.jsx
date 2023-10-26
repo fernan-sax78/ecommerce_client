@@ -35,7 +35,7 @@ export function Address(props) {
       <div>
         <p className={styles.title}>{address.title} : </p>
         <p className={styles.addressInfo}>
-            {address.name} , {address.address} , {address.state} , {address.city}, {" "}
+            {address.name}  {address.address} , {address.state} , {address.city}, {" "}
             {address.postal_code}
         </p>
       </div>
