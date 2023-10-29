@@ -4,4 +4,8 @@
 .video{
     border-radius: 1rem;
     overflow: hidden;
+    @media (max-width : 25.875rem) {
+        height: 14.625rem !important;
+    }
 }
+
