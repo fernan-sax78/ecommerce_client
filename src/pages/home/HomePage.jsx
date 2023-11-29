@@ -7,8 +7,8 @@ import { useAuth , useCart } from "@/hooks";
 
 
 const platformsId = {
-  playstation : 1,
-  xbox : 2 ,
+  xbox : 1 ,
+  playstation : 2,
   nintendo : 3,
   pc : 4
 }
